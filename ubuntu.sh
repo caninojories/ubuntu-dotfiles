@@ -12,7 +12,7 @@ debInst() {
     dpkg-query -Wf'${db:Status-abbrev}' "$1" 2>/dev/null | grep -q '^i'
 }
 
-if dpkg-query -Wf'${db:Status-abbrev}' "$brew" 2>/dev/null | grep -q '^i'; then
+if whereis brew; then
     echo 'Why yes, the package "%s" _is_ installed!\n' "$brew"
 else
     echo 'I regret to inform you that the package "%s" is not currently installed.\n' "$1"
