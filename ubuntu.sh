@@ -24,11 +24,27 @@ rvm requirements
 #install first the dependecies
 #https://github.com/Homebrew/linuxbrew
 sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+
 #get the latest linuxbrew from ruby
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+#but check first if brew is installed
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    # https://github.com/mxcl/homebrew/wiki/installation
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+else
+    brew update
+fi
+
 #add the path for linuxbrew
 sudo echo "export PATH="$HOME/.linuxbrew/bin:$PATH""
 sudo echo "export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH""
 sudo echo "export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH""
+
+#let's clean stuff
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get update
+sudo apt-get clean
 
 echo "========== FINISH!!! =========="
