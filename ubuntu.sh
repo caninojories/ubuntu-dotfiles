@@ -4,7 +4,7 @@
 # Install curl
 # ============================================================================
 
-apt-get update
+sudo apt-get update
 apt-get install curl
 
 #for source to work download zsh
@@ -16,8 +16,7 @@ sudo chsh -s $(which zsh) $(whoami)
 \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 #get the stable version of rvm
 \curl -sSL https://get.rvm.io | bash -s stable && rvm reload
-source $HOME/.rvm/scripts/rvm
-sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting" >>  $HOME/.zshrc
+sudo echo "export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting" >>  $HOME/.zshrc
 #install rvm dependencies
 rvm requirements
 
