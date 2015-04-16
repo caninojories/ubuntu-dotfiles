@@ -12,26 +12,18 @@ debInst() {
     dpkg-query -Wf'${db:Status-abbrev}' "$1" 2>/dev/null | grep -q '^i'
 }
 
-if whereis brew; then
-    echo 'Why yes, the package "%s" _is_ installed!\n' "$brew"
-else
-    echo 'I regret to inform you that the package "%s" is not currently installed.\n' "$1"
-fi
-
-if check brew; then
-  echo "Awesome! Homebrew is installed! Now updating..."
-  echo ""
-  brew upgrade
-  brew update
-fi
-
-if ! check brew; then
+if ! whereis brew; then
   echo "Download and install homebrew"
   echo ""
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
 
   # Run Brew doctor before anything else
   brew doctor
+else
+  echo "Awesome! Homebrew is installed! Now updating..."
+  echo ""
+  brew upgrade
+  brew update
 fi
 
 #before curling just download this first
