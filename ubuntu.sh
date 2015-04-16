@@ -10,7 +10,7 @@ sudo apt-get install curl
 #for source to work download zsh
 sudo apt-get install zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-chsh -s /bin/zsh
+sudo chsh -s $(which zsh) $(whoami)
 
 #before curling just download this first
 \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
