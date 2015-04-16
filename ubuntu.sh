@@ -9,7 +9,7 @@ sudo apt-get install curl
 
 check () { type -t "${@}" > /dev/null 2>&1; }
 
-if check brew then
+if check brew; then
   echo "Awesome! Homebrew is installed! Now updating..."
   echo ""
   brew upgrade
