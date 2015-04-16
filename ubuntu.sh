@@ -15,7 +15,7 @@ sudo chsh -s $(which zsh) $(whoami)
 #before curling just download this first
 \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 #get the stable version of rvm
-\curl -sSL https://get.rvm.io | bash -s stable
+\curl -sSL https://get.rvm.io | bash -s stable && rvm reload
 sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting"
 #install rvm dependencies
 rvm requirements
