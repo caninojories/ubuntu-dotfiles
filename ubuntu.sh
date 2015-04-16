@@ -16,7 +16,7 @@ sudo chsh -s $(which zsh) $(whoami)
 \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 #get the stable version of rvm
 \curl -sSL https://get.rvm.io | bash -s stable && rvm reload
-sudo echo "export PATH="$HOME:$PATH/.rvm/bin" # Add RVM to PATH for scripting" >>  $HOME:$PATH/.zshrc
+sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting" >>  $PATH:$HOME/.zshrc
 #install rvm dependencies
 rvm requirements
 
@@ -32,9 +32,9 @@ if test ! $(which brew); then
     # Install linuxbrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
     #add the path for linuxbrew
-    sudo echo "export PATH="$HOME:$PATH/.linuxbrew/bin""
-    sudo echo "export MANPATH="$HOME:$PATH/.linuxbrew/share/man""
-    sudo echo "export INFOPATH="$HOME:$PATH/.linuxbrew/share/info""
+    sudo echo "export PATH="$PATH:$HOME/.linuxbrew/bin""
+    sudo echo "export MANPATH="$MANPATH:$HOME/.linuxbrew/share/man""
+    sudo echo "export INFOPATH="$INFOPATH:$HOME/.linuxbrew/share/info""
 else
     brew update
 fi
