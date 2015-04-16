@@ -29,8 +29,7 @@ sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl
 #but check first if brew is installed
 which -s brew
 if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    # https://github.com/mxcl/homebrew/wiki/installation
+    # Install linuxbrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
 else
     brew update
@@ -41,7 +40,13 @@ sudo echo "export PATH="$HOME/.linuxbrew/bin:$PATH""
 sudo echo "export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH""
 sudo echo "export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH""
 
+#install git
+brew install git
+
 #let's clean stuff
+sudo brew update
+sudo brew doctor
+sudo brew cleanup
 sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get update
