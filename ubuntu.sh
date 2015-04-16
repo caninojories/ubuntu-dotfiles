@@ -28,7 +28,7 @@ sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl
 #get the latest linuxbrew from ruby
 #but check first if brew is installed
 
-if !$(which brew) ; then
+if test ! $(which brew); then
     # Install linuxbrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
 else
