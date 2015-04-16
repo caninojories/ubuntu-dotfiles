@@ -41,12 +41,14 @@ sudo echo "export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH""
 sudo echo "export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH""
 
 #install git
+brew update
+brew doctor
 brew install git
 
 #let's clean stuff
-sudo brew update
-sudo brew doctor
-sudo brew cleanup
+brew update
+brew doctor
+brew cleanup
 sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get update
