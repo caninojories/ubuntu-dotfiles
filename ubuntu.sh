@@ -17,9 +17,8 @@ sudo chsh -s $(which zsh) $(whoami)
 #get the stable version of rvm
 \curl -sSL https://get.rvm.io | bash -s stable
 source $HOME/.rvm/scripts/rvm
-sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting"
+sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting" >>  $HOME/.zshrc
 #install rvm dependencies
 rvm requirements
-
 
 echo "========== FINISH!!! =========="
