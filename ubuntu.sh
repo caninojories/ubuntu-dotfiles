@@ -7,6 +7,8 @@
 sudo apt-get update
 sudo apt-get install curl
 
+#before curling just download this first
+\curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 #get the stable version of rvm
 \curl -sSL https://get.rvm.io | bash -s stable
 source $HOME/.rvm/scripts/rvm
