@@ -31,4 +31,11 @@ fi
 #get the stable version of rvm
 \curl -sSL https://get.rvm.io | bash -s stable && rvm reload
 
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get update
+sudo apt-get clean
+
+killall Terminal
+
 echo "========== FINISH!!! =========="
