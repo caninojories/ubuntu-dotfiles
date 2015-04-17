@@ -33,7 +33,7 @@ cp -R $HOME/GITENVREPO/env/shell/.bash_profile $HOME/.bash_profile
 #before curling just download this first
 \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 #get the stable version of rvm
-\curl -sSL https://get.rvm.io | bash -s stable
+\curl -sSL https://get.rvm.io | bash
 
 sudo apt-get autoremove
 sudo apt-get autoclean
