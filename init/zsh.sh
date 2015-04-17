@@ -13,6 +13,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh"
   curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 fi
+sudo chsh -s $(which zsh) $(whoami)
 
 # Open Terminal Settings
 #echo ""
