@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOT="$HOME/GITENVREPO/env/"
+DOT="$HOME/GITENVREPO/env"
 
 echo "Initializing .bash_aliases"
 cp -Rfxv $DOT/shell/.bash_aliases $HOME/.bash_aliases
