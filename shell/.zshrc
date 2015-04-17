@@ -64,7 +64,7 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git osx ruby terminalapp)
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 
 # Configs
@@ -77,7 +77,7 @@ export PATH="/usr/local/bin:$HOME/.rvm/gems/ruby-2.1.3@global/bin:$PATH"
 #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source . ~/.rvm/scripts/rvm
 
 # Thanks for the awesome idea batasrki
 function gemdir {
