@@ -30,8 +30,8 @@ fi
 echo ""
 #echo "Install Pongstr zsh-theme"
 #cp -RfXv "$DOT/shell/Pongstr Base-16.zsh-theme" "$HOME/.oh-my-zsh/themes/pongstr.zsh-theme"
-cp -Rfxv "$DOT/shell/.zshrc" $HOME/.zshrc
-sudo chsh -s $(which zsh) $(whoami)
+cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
+source $HOME/.zshrc
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 
