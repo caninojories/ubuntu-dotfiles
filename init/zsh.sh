@@ -3,10 +3,10 @@
 DOT="$HOME/GITENVREPO/env/"
 
 echo "Initializing .bash_aliases"
-cp -RfXv $DOT/shell/.bash_aliases $HOME/.bash_aliases
+cp -Rfxv $DOT/shell/.bash_aliases $HOME/.bash_aliases
 
 echo "Initializing .bash_profile"
-cp -RfXv $DOT/shell/.bash_profile $HOME/.bash_profile
+cp -Rfxv $DOT/shell/.bash_profile $HOME/.bash_profile
 
 # Install zsh & oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -30,7 +30,7 @@ fi
 echo ""
 #echo "Install Pongstr zsh-theme"
 #cp -RfXv "$DOT/shell/Pongstr Base-16.zsh-theme" "$HOME/.oh-my-zsh/themes/pongstr.zsh-theme"
-cp -RfXv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
+cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 
 sleep 1
 killall Terminal
