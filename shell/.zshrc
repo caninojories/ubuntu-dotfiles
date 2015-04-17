@@ -4,7 +4,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # MacVim as Default editor
-export EDITOR=vim
+# EDITOR=vim
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -14,8 +14,8 @@ export EDITOR=vim
 #ZSH_THEME="pongstr"
 
 # Aliases
-alias zshconfig="vi $HOME/.zshrc"
-alias ohmyzsh="cd $HOME/.oh-my-zsh"
+#alias zshconfig="vi $HOME/.zshrc"
+#alias ohmyzsh="cd $HOME/.oh-my-zsh"
 
 # Home Folders
 # ---------------------------------------------------------------------------
