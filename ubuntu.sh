@@ -26,10 +26,14 @@ else
   brew update
 fi
 
+cp -R $HOME/GITENVREPO/env/shell/.bashrc $HOME/.bashrc
+cp -R $HOME/GITENVREPO/env/shell/.bash_alias $HOME/.bash_alias
+cp -R $HOME/GITENVREPO/env/shell/.bash_profile $HOME/.bash_profile
+
 #before curling just download this first
 \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 #get the stable version of rvm
-\curl -sSL https://get.rvm.io | bash -s stable && rvm reload
+\curl -sSL https://get.rvm.io | bash -s stable
 
 sudo apt-get autoremove
 sudo apt-get autoclean
