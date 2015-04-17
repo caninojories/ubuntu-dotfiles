@@ -11,9 +11,10 @@ cp -Rfxv $DOT/shell/.bash_profile $HOME/.bash_profile
 # Install zsh & oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh"
-  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+  sudo apt-get install zsh
+  curl -L http://install.ohmyz.sh | sh
+  sudo chsh -s $(which zsh) $(whoami)
 fi
-sudo chsh -s $(which zsh) $(whoami)
 
 # Open Terminal Settings
 #echo ""
