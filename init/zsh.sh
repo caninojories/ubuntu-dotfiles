@@ -15,6 +15,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   curl -L http://install.ohmyz.sh | sh
 fi
 chsh -s /usr/bin/zsh
+sleep 1
 # Open Terminal Settings
 #echo ""
 #echo "Install Pongstr Base-16 Theme"
