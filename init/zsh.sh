@@ -13,9 +13,8 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh"
   sudo apt-get install zsh
   curl -L http://install.ohmyz.sh | sh
-  sudo chsh -s $(which zsh) $(whoami)
 fi
-
+chsh -s /usr/bin/zsh
 # Open Terminal Settings
 #echo ""
 #echo "Install Pongstr Base-16 Theme"
@@ -35,6 +34,5 @@ echo ""
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && . ~/.zshrc
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
-
 sleep 1
 killall Terminal
