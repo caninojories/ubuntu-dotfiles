@@ -1,5 +1,7 @@
 #!/usr/bin/sh
-
+#To ignore warning
+#You have '~/.profile' file, you might want to load it
+source ~/.profile
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
