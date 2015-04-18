@@ -34,7 +34,7 @@ fi
 echo ""
 #echo "Install Pongstr zsh-theme"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
-cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && . ~/.zshrc
+cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source ~/.zshrc
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
