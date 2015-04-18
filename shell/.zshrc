@@ -20,7 +20,7 @@ ZSH_THEME="jories"
 # Home Folders
 # ---------------------------------------------------------------------------
 
-#alias home="$HOME && clear"
+alias home="$HOME && clear"
 #alias apps="/Applications"
 #alias music="$HOME/Music/"
 #alias movies="$HOME/Movies/"
