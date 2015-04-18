@@ -35,8 +35,8 @@ echo ""
 #echo "Install Pongstr zsh-theme"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
-#&& . ~/.zshrc
-sudo chsh -s $(which zsh) $(whoami)
+#Use the zsh in our current shell
+echo "sudo chsh -s $(which zsh) $(whoami)"
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
