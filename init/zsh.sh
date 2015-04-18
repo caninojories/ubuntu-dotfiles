@@ -31,16 +31,16 @@ fi
 #defaults write com.apple.terminal "Startup Window Settings" -string "Pongstr Base-16.terminal"
 
 # Link .zshrc
-echo "$(tput setaf 6)Assign our theme to our 'ZSH shell'"
+echo "$(tput setaf 6)START ASSIGN 'ZSH SHELL'"
 #echo "Install Pongstr zsh-theme"
 echo "$(tput setaf 5)"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
-echo "$(tput setaf 1)Finish Setting Theme"
+echo "$(tput setaf 1)========== FINISH ========="
 #Use the zsh in our current shell
-echo "$(tput setaf 6)Make the ZSH our default $(tput bold)shell"
+echo "$(tput setaf 6)MAKE THE ZSH OUR DEFAULT SHELL"
 sudo chsh -s $(which zsh) $(whoami)
-echo "$(tput setaf 1)Finish Assigning Default shell(ZSH)"
+echo "$(tput setaf 1)========== FINISH =========="
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
