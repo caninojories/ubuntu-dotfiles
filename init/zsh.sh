@@ -20,20 +20,6 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   curl -L http://install.ohmyz.sh | sh
   echo "$(tput setaf 1)========== FINISH =========="
 fi
-# chsh -s /usr/bin/zsh
-# sleep 1
-
-# Open Terminal Settings
-#echo ""
-#echo "Install Pongstr Base-16 Theme"
-#open "$DOT/shell/Pongstr Base-16.terminal"
-#sleep 1 # Wait a bit to make sure the theme is loaded
-
-# Set Terminal Custom Theme
-#echo ""
-#echo "Setting Pongstr Base-16.terminal as the default theme."
-#defaults write com.apple.terminal "Default Window Settings" -string "Pongstr Base-16.terminal"
-#defaults write com.apple.terminal "Startup Window Settings" -string "Pongstr Base-16.terminal"
 
 # Link .zshrc
 echo "$(tput setaf 6)START ASSIGN 'ZSH SHELL'"
