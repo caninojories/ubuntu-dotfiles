@@ -33,12 +33,11 @@ fi
 # Link .zshrc
 echo ""
 #echo "Install Pongstr zsh-theme"
-sleep 1
-sudo chsh -s $(which zsh) $(whoami)
-sleep 1
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
-cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source ~/.zshrc
+cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
+#&& . ~/.zshrc
+sudo chsh -s $(which zsh) $(whoami)
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
-killall Terminal
+#killall Terminal
