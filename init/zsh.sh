@@ -36,4 +36,5 @@ echo "$(tput setaf 1)========== FINISH =========="
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
+source $HOME/.zshrc
 echo "$(tput setaf 2)========== END!!! =========="
