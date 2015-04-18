@@ -31,7 +31,7 @@ fi
 #defaults write com.apple.terminal "Startup Window Settings" -string "Pongstr Base-16.terminal"
 
 # Link .zshrc
-echo "$(tput setaf 1)Assign our theme to our $(tput bold)ZSH $(tput dim)shell"
+echo "$(tput setaf 6)Assign our theme to our '$(tput bold)ZSH shell'"
 #echo "Install Pongstr zsh-theme"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
