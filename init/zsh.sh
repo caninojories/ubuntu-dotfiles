@@ -34,6 +34,6 @@ echo "$(tput setaf 5)"
 sudo chsh -s $(which zsh) $(whoami)
 echo "$(tput setaf 1)========== FINISH =========="
 
-cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && . ~/.zshrc
 sleep 1
+echo ""
 echo "$(tput setaf 2)========== END!!! =========="
