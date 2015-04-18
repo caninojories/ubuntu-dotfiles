@@ -44,4 +44,4 @@ echo "$(tput setaf 1)Finish Assigning Default shell(ZSH)"
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
-#killall Terminal
+echo "$(tput setaf 2)========== FINISH!!! =========="
