@@ -30,6 +30,8 @@ alias home="$HOME && clear"
 #alias dropbox="/Volumes/Pongstr/Dropbox/"
 #alias pictures="$HOME/Pictures/"
 #alias documents="$HOME/Documents"
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 
 # Projects Directory
 # ---------------------------------------------------------------------------

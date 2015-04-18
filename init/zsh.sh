@@ -32,6 +32,7 @@ echo "$(tput setaf 6)START ASSIGN 'ZSH SHELL'"
 echo "$(tput setaf 5)"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
+echo " "
 echo "$(tput setaf 1)========== FINISH ========="
 echo " "
 #Use the zsh in our current shell
