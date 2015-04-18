@@ -27,7 +27,7 @@ else
 fi
 
 cp -R $HOME/GITENVREPO/env/shell/.bashrc $HOME/.bashrc
-cp -R $HOME/GITENVREPO/env/shell/.bash_alias $HOME/.bash_alias
+#cp -R $HOME/GITENVREPO/env/shell/.bash_alias $HOME/.bash_alias
 cp -R $HOME/GITENVREPO/env/shell/.bash_profile $HOME/.bash_profile
 
 #before curling just download this first

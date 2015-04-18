@@ -2,6 +2,9 @@
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 # MacVim as Default editor
 # EDITOR=vim
