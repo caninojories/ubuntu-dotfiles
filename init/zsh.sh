@@ -7,12 +7,14 @@ echo "$(tput setaf 5)"
 cp -Rfxv $DOT/shell/.bash_aliases $HOME/.bash_aliases
 echo " "
 echo "$(tput setaf 1)========== FINISH =========="
+echo " "
 
 echo "$(tput setaf 6)INITIALIZING .bash_profile"
 echo "$(tput setaf 5)"
 cp -Rfxv $DOT/shell/.bash_profile $HOME/.bash_profile
 echo " "
 echo "$(tput setaf 1)========== FINISH =========="
+echo " "
 
 # Install zsh & oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
