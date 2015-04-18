@@ -3,10 +3,12 @@
 DOT="$HOME/GITENVREPO/env"
 
 echo "$(tput setaf 6)INITIALIZING .bash_aliases"
+echo "$(tput setaf 5)"
 cp -Rfxv $DOT/shell/.bash_aliases $HOME/.bash_aliases
 echo "$(tput setaf 1)========== FINISH =========="
 
 echo "$(tput setaf 6)INITIALIZING .bash_profile"
+echo "$(tput setaf 5)"
 cp -Rfxv $DOT/shell/.bash_profile $HOME/.bash_profile
 echo "$(tput setaf 1)========== FINISH =========="
 
@@ -42,6 +44,7 @@ cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
 echo "$(tput setaf 1)========== FINISH ========="
 #Use the zsh in our current shell
 echo "$(tput setaf 6)MAKE THE ZSH OUR DEFAULT SHELL"
+echo "$(tput setaf 5)"
 sudo chsh -s $(which zsh) $(whoami)
 echo "$(tput setaf 1)========== FINISH =========="
 
