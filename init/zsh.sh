@@ -11,11 +11,13 @@ cp -Rfxv $DOT/shell/.bash_profile $HOME/.bash_profile
 # Install zsh & oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh"
+  #need this for fresh install before installing ohmyz.sh
   sudo apt-get install zsh
   curl -L http://install.ohmyz.sh | sh
 fi
-chsh -s /usr/bin/zsh
-sleep 1
+# chsh -s /usr/bin/zsh
+# sleep 1
+
 # Open Terminal Settings
 #echo ""
 #echo "Install Pongstr Base-16 Theme"
@@ -31,7 +33,7 @@ sleep 1
 # Link .zshrc
 echo ""
 #echo "Install Pongstr zsh-theme"
-#cp -RfXv "$DOT/shell/Pongstr Base-16.zsh-theme" "$HOME/.oh-my-zsh/themes/pongstr.zsh-theme"
+cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && . ~/.zshrc
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
