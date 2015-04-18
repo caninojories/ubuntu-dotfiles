@@ -28,7 +28,7 @@ Host github.com
   IdentityFile $HOME/.ssh/github_rsa
 EOM
 
-function github_sshkey () {
+github_sshkey () {
   echo ""
   read -p "Please enter your github email: " GITHUB_EMAIL
   echo ""
@@ -65,7 +65,7 @@ while true; do
   esac
 done
 
-function bitbucket_sshkey () {
+bitbucket_sshkey () {
   echo ""
   echo "Creating your Bitbucket SSH Key"
   echo ""
