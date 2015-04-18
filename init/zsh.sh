@@ -2,18 +2,21 @@
 
 DOT="$HOME/GITENVREPO/env"
 
-echo "Initializing .bash_aliases"
+echo "$(tput setaf 6)INITIALIZING .bash_aliases"
 cp -Rfxv $DOT/shell/.bash_aliases $HOME/.bash_aliases
+echo "$(tput setaf 1)========== FINISH =========="
 
-echo "Initializing .bash_profile"
+echo "$(tput setaf 6)INITIALIZING .bash_profile"
 cp -Rfxv $DOT/shell/.bash_profile $HOME/.bash_profile
+echo "$(tput setaf 1)========== FINISH =========="
 
 # Install zsh & oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
-  echo "Installing oh-my-zsh"
+  echo "$(tput setaf 6)INSTALLING OH-MY-ZSH"
   #need this for fresh install before installing ohmyz.sh
   sudo apt-get install zsh
   curl -L http://install.ohmyz.sh | sh
+  echo "$(tput setaf 1)========== FINISH =========="
 fi
 # chsh -s /usr/bin/zsh
 # sleep 1
@@ -44,4 +47,4 @@ echo "$(tput setaf 1)========== FINISH =========="
 
 #cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
 sleep 1
-echo "$(tput setaf 2)========== FINISH!!! =========="
+echo "$(tput setaf 2)========== END!!! =========="
