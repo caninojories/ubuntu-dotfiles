@@ -83,7 +83,7 @@ export PATH="/usr/local/bin:$HOME/.rvm/gems/ruby-2.1.3@global/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . ~/.rvm/scripts/rvm
 
 # Thanks for the awesome idea batasrki
-function gemdir {
+gemdir {
   if [[ -z "$1" ]] ; then
     echo "gemdir expects a parameter, which should be a valid RVM Ruby selector"
   else
