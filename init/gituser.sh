@@ -42,9 +42,7 @@ github_sshkey () {
   echo ""
   eval "$(ssh-agent)"
   ssh-add $HOME/.ssh/github_rsa
-  
-  #To used pbcopy in linux install it
-  pbcopy < $HOME/.ssh/github_rsa.pub
+  cat $HOME/.ssh/github_rsa.pub
 
   echo ""
   echo "# -------------------------- !IMPORTANT: ------------------------- "
@@ -80,8 +78,9 @@ bitbucket_sshkey () {
   echo ""
   echo ">   Adding your ssh key, please enter your passphrase one more time"
   echo ""
+  eval "$(ssh-agent)"
   ssh-add $HOME/.ssh/bitbucket_rsa
-  pbcopy < $HOME/.ssh/bitbucket_rsa.pub
+  cat $HOME/.ssh/bitbucket_rsa.pub
 
   echo ""
   echo "# -------------------------- !IMPORTANT: ------------------------- "
