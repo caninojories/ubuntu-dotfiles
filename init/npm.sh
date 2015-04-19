@@ -2,7 +2,7 @@
 
 # List Packages that will be installed
 # node_modules = ('gulp')
-Unix=('Debian' 'Red hat' 'Ubuntu' 'Suse' 'Fedora' 'UTS' 'OpenLinux');
+declare -a Unix=('Debian' 'Red hat' 'Red hat' 'Suse' 'Fedora');
 
 # Install Node Packages
 # npm install -g  ${node_modules[@]}
