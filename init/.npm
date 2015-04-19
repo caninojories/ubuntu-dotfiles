@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # List Packages that will be installed
-node_modules=(
+node_modules = (
   gulp
 )
 
