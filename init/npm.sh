@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # List Packages that will be installed
 # node_modules = ('gulp')
