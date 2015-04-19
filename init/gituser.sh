@@ -41,6 +41,8 @@ github_sshkey () {
   echo ">   Adding your ssh key, please enter your passphrase one more time"
   echo ""
   ssh-add $HOME/.ssh/github_rsa
+  #To used pbcopy in linux install it
+  apt-get install xsel
   pbcopy < $HOME/.ssh/github_rsa.pub
 
   echo ""
