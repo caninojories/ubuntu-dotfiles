@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # List Packages that will be installed
-# node_modules = ('gulp')
-declare -a Unix=('Debian' 'Red hat' 'Red hat' 'Suse' 'Fedora');
+node_modules[0] = gulp
 
 # Install Node Packages
-# npm install -g  ${node_modules[@]}
+npm install -g  ${node_modules[@]}
