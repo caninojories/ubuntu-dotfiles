@@ -40,7 +40,7 @@ github_sshkey () {
   echo ""
   echo ">   Adding your ssh key, please enter your passphrase one more time"
   echo ""
-  eval ssh-agent -s
+  eval "$(ssh-agent)"
   ssh-add $HOME/.ssh/github_rsa
   #To used pbcopy in linux install it
   sudo apt-get install xsel
