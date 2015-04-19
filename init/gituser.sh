@@ -45,7 +45,6 @@ github_sshkey () {
   #To used pbcopy in linux install it
   sudo apt-get install xsel
   sleep 1
-  ssh canino_jories@128.199.154.56
   pbcopy < $HOME/.ssh/github_rsa.pub
 
   echo ""
