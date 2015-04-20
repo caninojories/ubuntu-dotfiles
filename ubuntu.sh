@@ -58,7 +58,6 @@ echo "$(tput setaf 5)"
 sleep 5
 cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
 cp -R $HOME/Projects/github/env/shell/.bash_profile $HOME/.bash_profile
-. ~/.bash_profile
 sleep 3
 echo " "
 echo "$(tput setaf 1)========== FINISH =========="
@@ -78,6 +77,9 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
   sleep 5
   sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
   git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
+  sudo echo "export PATH="$PATH:$HOME/.linuxbrew/bin""
+  sudo echo "export MANPATH="$MANPATH:$HOME/.linuxbrew/share/man""
+  sudo echo "export INFOPATH="$INFOPATH:$HOME/.linuxbrew/share/info""
   sleep 3
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
