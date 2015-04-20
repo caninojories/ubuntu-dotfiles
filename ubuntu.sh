@@ -42,7 +42,7 @@ echo " "
 echo "$(tput setaf 1)========== FINISH =========="
 echo " "
 
-if ! whereis brew; then
+if [ ! -d "$HOME/.linuxbrew" ]; then
   echo "$(tput setaf 6)DOWNLOADING And INSTALLING HOMEBREW"
   echo "$(tput setaf 5)"
   sleep 5
@@ -74,8 +74,8 @@ fi
 echo "$(tput setaf 6)COPY .BASHRC And .BASH_PROFILE"
 echo "$(tput setaf 5)"
 sleep 5
-cp -R $HOME/GITENVREPO/env/shell/.bashrc $HOME/.bashrc
-cp -R $HOME/GITENVREPO/env/shell/.bash_profile $HOME/.bash_profile
+cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
+cp -R $HOME/Projects/github/env/bewshell/.bash_profile $HOME/.bash_profile
 sleep 3
 echo " "
 echo "$(tput setaf 1)========== FINISH =========="
