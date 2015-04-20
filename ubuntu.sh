@@ -96,6 +96,7 @@ echo "$(tput setaf 5)"
 sleep 5
 cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
 cp -R $HOME/Projects/github/env/shell/.bash_profile $HOME/.bash_profile
+source $HOME/.bash_profile
 
 sleep 3
 echo " "
