@@ -6,7 +6,7 @@
 # Update Aptitude
 
 # Install Git latest version
-if ! whereis git; then
+if [ ! -d "$HOME/.git" ]; then
   echo "$(tput setaf 6)DOWNLOADING GIT"
   echo "$(tput setaf 5)"
   sleep 5
