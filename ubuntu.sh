@@ -43,20 +43,29 @@ if [ ! -f "/usr/bin/curl" ]; then
   echo " "
 fi
 
-echo "$(tput setaf 6)CURL RVM"
-echo "$(tput setaf 5)"
-sleep 5
-#before curling just download this first
-\curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-#get the stable version of rvm
-\curl -sSL https://get.rvm.io | bash
-sleep 3
-echo " "
-echo "$(tput setaf 1)========== FINISH =========="
-echo " "
-
+if [ ! -f "/usr/local/rvm/bin/rvm" ];
+  echo "$(tput setaf 6)CURL RVM"
+  echo "$(tput setaf 5)"
+  sleep 5
+  #before curling just download this first
+  \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+  #get the stable version of rvm
+  \curl -sSL https://get.rvm.io | bash
+  sleep 3
+  echo " "
+  echo "$(tput setaf 1)========== FINISH =========="
+  echo " "
+fi
 
 if [ ! -d "$HOME/.linuxbrew" ]; then
+  echo "$(tput setaf 6)INSTALL RUBY BEFORE DOWNLOADING HOMEBREW"
+  echo "$(tput setaf 5)"
+  sleep 5
+  sudo apt-get install ruby
+  echo " "
+  echo "$(tput setaf 1)========== FINISH =========="
+  echo " "
+
   echo "$(tput setaf 6)DOWNLOADING And INSTALLING HOMEBREW"
   echo "$(tput setaf 5)"
   sleep 5
@@ -90,6 +99,7 @@ echo "$(tput setaf 5)"
 sleep 5
 cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
 cp -R $HOME/Projects/github/env/shell/.bash_profile $HOME/.bash_profile
+
 sleep 3
 echo " "
 echo "$(tput setaf 1)========== FINISH =========="
