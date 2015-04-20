@@ -65,11 +65,8 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
   echo "$(tput setaf 6)DOWNLOADING And INSTALLING HOMEBREW"
   echo "$(tput setaf 5)"
   sleep 5
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
-  #add the path for linuxbrew
-  sudo echo "export PATH="$PATH:$HOME/.linuxbrew/bin""
-  sudo echo "export MANPATH="$MANPATH:$HOME/.linuxbrew/share/man""
-  sudo echo "export INFOPATH="$INFOPATH:$HOME/.linuxbrew/share/info""
+  sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+  git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
   sleep 3
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="

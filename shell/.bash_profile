@@ -7,7 +7,9 @@ shopt -s cdspell;
 
 # Export PATH after RVM installation
 export PATH="/usr/local/bin:$HOME/.rvm/gems/ruby-2.1.3@global/bin:$PATH"
-
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 # Make /Applications the default location of apps
 #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
