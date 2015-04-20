@@ -31,29 +31,29 @@ else
   echo " "
 fi
 
-#install curl before running condition
-echo "$(tput setaf 6)DOWNLOADING CURL"
-echo "$(tput setaf 5)"
-sleep 5
-sudo apt-get install curl
-sleep 3
-echo " "
-echo "$(tput setaf 1)========== FINISH =========="
-echo " "
-
 if [ ! -f "/usr/bin/curl" ]; then
-  echo "$(tput setaf 6)CURL RVM"
+  #install curl before running condition
+  echo "$(tput setaf 6)DOWNLOADING CURL"
   echo "$(tput setaf 5)"
   sleep 5
-  #before curling just download this first
-  \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-  #get the stable version of rvm
-  \curl -sSL https://get.rvm.io | bash
+  sudo apt-get install curl
   sleep 3
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
 fi
+
+echo "$(tput setaf 6)CURL RVM"
+echo "$(tput setaf 5)"
+sleep 5
+#before curling just download this first
+\curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+#get the stable version of rvm
+\curl -sSL https://get.rvm.io | bash
+sleep 3
+echo " "
+echo "$(tput setaf 1)========== FINISH =========="
+echo " "
 
 
 if [ ! -d "$HOME/.linuxbrew" ]; then
