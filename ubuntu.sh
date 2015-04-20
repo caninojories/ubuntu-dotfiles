@@ -53,6 +53,17 @@ if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   echo " "
 fi
 
+echo "$(tput setaf 6)COPY .BASHRC And .BASH_PROFILE"
+echo "$(tput setaf 5)"
+sleep 5
+cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
+cp -R $HOME/Projects/github/env/shell/.bash_profile $HOME/.bash_profile
+. ~/.bash_profile
+sleep 3
+echo " "
+echo "$(tput setaf 1)========== FINISH =========="
+echo " "
+
 if [ ! -d "$HOME/.linuxbrew" ]; then
   echo "$(tput setaf 6)INSTALL RUBY BEFORE DOWNLOADING HOMEBREW"
   echo "$(tput setaf 5)"
@@ -91,17 +102,6 @@ else
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
 fi
-echo "$(tput setaf 6)COPY .BASHRC And .BASH_PROFILE"
-echo "$(tput setaf 5)"
-sleep 5
-cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
-cp -R $HOME/Projects/github/env/shell/.bash_profile $HOME/.bash_profile
-source $HOME/.bash_profile
-
-sleep 3
-echo " "
-echo "$(tput setaf 1)========== FINISH =========="
-echo " "
 
 echo "$(tput setaf 6)UPDATE REMOVE AUTOCLEAN CLEAN PACKAGES"
 echo "$(tput setaf 5)"
