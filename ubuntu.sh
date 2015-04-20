@@ -21,7 +21,7 @@ else
   echo "$(tput setaf 6)AWESOME! GIT is INSTALLED! Now Updating Packages..."
   echo "$(tput setaf 5)"
   sleep 5
-  sudo apt-get update
+  #sudo apt-get update
   sudo apt-get autoremove
   sudo apt-get autoclean
   sudo apt-get clean
