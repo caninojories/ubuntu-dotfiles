@@ -3,8 +3,24 @@
 # ============================================================================
 # Install curl
 # ============================================================================
+# Update Aptitude
 
-sudo apt-get update
+# Install Git latest version
+if ! whereis git; then
+  echo "Download git"
+  echo ""
+  sudo add-apt-repository ppa:git-core/ppa
+  sudo apt-get update
+  sudo apt-get install git
+else
+  sudo apt-get dist-upgrade
+  sudo apt-get update
+  sudo apt-get autoremove
+  sudo apt-get autoclean
+  sudo apt-get clean
+fi
+
+#install curl before running condition
 sudo apt-get install curl
 
 if ! whereis brew; then
@@ -30,9 +46,9 @@ cp -R $HOME/GITENVREPO/env/shell/.bash_profile $HOME/.bash_profile
 #get the stable version of rvm
 \curl -sSL https://get.rvm.io | bash
 
+sudo apt-get update
 sudo apt-get autoremove
 sudo apt-get autoclean
-sudo apt-get update
 sudo apt-get clean
 
 echo "========== FINISH!!! =========="
