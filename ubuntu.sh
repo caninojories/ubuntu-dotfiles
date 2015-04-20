@@ -2,6 +2,7 @@
 
 # Install Git latest version
 if [ ! -f "/usr/bin/git" ]; then
+  echo ""
   echo "$(tput setaf 6)DOWNLOADING GIT"
   echo "$(tput setaf 5)"
   sleep 5
@@ -65,6 +66,10 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
   echo "$(tput setaf 5)"
   sleep 5
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+  #add the path for linuxbrew
+  sudo echo "export PATH="$PATH:$HOME/.linuxbrew/bin""
+  sudo echo "export MANPATH="$MANPATH:$HOME/.linuxbrew/share/man""
+  sudo echo "export INFOPATH="$INFOPATH:$HOME/.linuxbrew/share/info""
   sleep 3
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
