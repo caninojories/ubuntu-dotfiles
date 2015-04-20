@@ -74,7 +74,7 @@ echo "$(tput setaf 6)COPY .BASHRC And .BASH_PROFILE"
 echo "$(tput setaf 5)"
 sleep 5
 cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
-cp -R $HOME/Projects/github/env/bewshell/.bash_profile $HOME/.bash_profile
+cp -R $HOME/Projects/github/env/shell/.bash_profile $HOME/.bash_profile
 sleep 3
 echo " "
 echo "$(tput setaf 1)========== FINISH =========="
