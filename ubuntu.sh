@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# ============================================================================
-# Install curl
-# ============================================================================
-# Update Aptitude
-
 # Install Git latest version
 if [ ! -f "/usr/bin/git" ]; then
   echo "$(tput setaf 6)DOWNLOADING GIT"
@@ -43,7 +38,7 @@ if [ ! -f "/usr/bin/curl" ]; then
   echo " "
 fi
 
-if [ ! -f "/usr/local/rvm/bin/rvm" ];
+if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   echo "$(tput setaf 6)CURL RVM"
   echo "$(tput setaf 5)"
   sleep 5
