@@ -7,11 +7,6 @@
 sudo apt-get update
 sudo apt-get install curl
 
-check () { type -t "${@}" > /dev/null 2>&1; }
-debInst() {
-    dpkg-query -Wf'${db:Status-abbrev}' "$1" 2>/dev/null | grep -q '^i'
-}
-
 if ! whereis brew; then
   echo "Download and install homebrew"
   echo ""
@@ -39,7 +34,5 @@ sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get update
 sudo apt-get clean
-
-killall Terminal
 
 echo "========== FINISH!!! =========="
