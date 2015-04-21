@@ -34,7 +34,6 @@ echo "$(tput setaf 6)START ASSIGN 'ZSH SHELL'"
 echo "$(tput setaf 5)"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
-sudo chsh -s $(which zsh)
 echo " "
 echo "$(tput setaf 1)========== FINISH ========="
 echo " "
@@ -46,7 +45,8 @@ echo "$(tput setaf 5)"
 #. ~/.zshrc
 echo "$(tput setaf 1)========== FINISH =========="
 
-sleep 1
+sleep 3
+sudo chsh -s $(which zsh)
 echo " "
 echo " "
 echo "$(tput setaf 2)========== END!!! =========="
