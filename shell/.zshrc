@@ -74,7 +74,7 @@ DISABLE_AUTO_TITLE="true"
 # -----------------------------------------------------------------------------
 
 # Export PATH after RVM installation
-export PATH="/usr/local/bin:$HOME/.rvm/gems/ruby-2.2.2@global/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/rvm/gems/ruby-2.2.2@global/bin:$PATH"
 
 # Make /Applications the default location of apps
 #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
