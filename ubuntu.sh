@@ -78,7 +78,7 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
   sleep 5
   sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
   git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
-  source $HOME/.
+  source $HOME/.oh_my_zsh
   sleep 3
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
