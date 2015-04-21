@@ -40,7 +40,7 @@ if [ ! -f "/usr/bin/curl" ]; then
   echo " "
 fi
 
-if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
+if [ ! -f "/usr/local/rvm" ]; then
   echo "$(tput setaf 6)CURL RVM"
   echo "$(tput setaf 5)"
   sleep 5
@@ -112,3 +112,5 @@ sleep 3
 echo " "
 echo " "
 echo "$(tput setaf 2)========== END!!! =========="
+#exit to load rvm
+exit
