@@ -23,7 +23,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   #need this for fresh install before installing ohmyz.sh
   sudo apt-get install zsh
   wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-  sudo chsh -s $(which zsh) $(whoami)
+  sudo chsh -s $(which zsh)
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "

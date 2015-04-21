@@ -66,7 +66,7 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git osx ruby terminalapp)
 
-. ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 
 # Configs
