@@ -7,7 +7,9 @@
 
 # install openssl, libyaml dependancies is installed via .brew
 echo ""
-echo "Installing Ruby 2.2.0"
+echo "$(tput setaf 6)INSTALLING Ruby 2.2.0"
+echo "$(tput setaf 5)"
+sleep 5
 rvm install 2.2.0 --disable-binary
 
 sleep 1
