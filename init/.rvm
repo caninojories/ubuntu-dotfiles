@@ -6,29 +6,30 @@
 # https://twitter.com/mpapis/status/447926386314186752
 
 # install openssl, libyaml dependancies is installed via .brew
-echo ""
-echo "$(tput setaf 6)INSTALLING Ruby 2.2.0"
-echo "$(tput setaf 5)"
-sleep 5
-rvm install 2.2.0 --disable-binary
-echo " "
-echo "$(tput setaf 1)========== FINISH =========="
-echo " "
+if [ ! -f "/usr/bin/rvm"]
+  echo ""
+  echo "$(tput setaf 6)INSTALLING Ruby 2.2.0"
+  echo "$(tput setaf 5)"
+  sleep 5
+  rvm install 2.2.2 --disable-binary
+  echo " "
+  echo "$(tput setaf 1)========== FINISH =========="
+  echo " "
 
-sleep 1
-rvm reload
+  sleep 1
+  rvm reload
 
-echo ""
-echo "  >   Set 2.2.0 as the default version"
-echo ""
-echo "$(tput setaf 6)SET 2.2.0 as the DEFAULT VERSION"
-echo "$(tput setaf 5)"
-sleep 5
-rvm use 2.2.0 --default
-echo " "
-echo "$(tput setaf 1)========== FINISH =========="
-echo " "
-
+  echo ""
+  echo "  >   Set 2.2.2 as the default version"
+  echo ""
+  echo "$(tput setaf 6)SET 2.2.2 as the DEFAULT VERSION"
+  echo "$(tput setaf 5)"
+  sleep 5
+  rvm use 2.2.2 --default
+  echo " "
+  echo "$(tput setaf 1)========== FINISH =========="
+  echo " "
+fi
 
 # Update OSX SSL Certs
 # ---------------------------------------------------------------------
