@@ -21,9 +21,9 @@ if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   echo " "
 fi
 
-if [ ! -f "/usr/bin/ruby" ] ; then
+if [ ! -f "/usr/lib/ruby" ] ; then
   echo ""
-  echo "$(tput setaf 6)INSTALLING Ruby 2.2.0"
+  echo "$(tput setaf 6)INSTALLING Ruby 2.2.2"
   echo "$(tput setaf 5)"
   sleep 5
   rvm install 2.2.2 --disable-binary
