@@ -12,10 +12,10 @@
   echo "$(tput setaf 5)"
   sleep 5
   #before curling just download this first
-  \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+  #\curl -sSL https://rvm.io/mpapis.asc | gpg --import -
   #get the stable version of rvm
   \curl -sSL https://get.rvm.io | bash -s stable
-  source $HOME/.rvm/scripts/rvm
+  source ~/.rvm/scripts/rvm
   sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting" >>  $HOME/.zshrc
   sleep 3
   echo " "
@@ -53,7 +53,7 @@
 
 sleep 1
 rvm reload
-. ~/.zshrc
+#. ~/.zshrc
 
 # echo ""
 # echo "  >   Update OSX SSL Certificates"
