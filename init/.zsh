@@ -40,13 +40,14 @@ echo " "
 #Use the zsh in our current shell
 echo "$(tput setaf 6)MAKE THE ZSH OUR DEFAULT SHELL"
 echo "$(tput setaf 5)"
+sudo chsh -s $(which zsh)
 #sudo chsh -s /bin/zsh
 #load the zshrc
 #. ~/.zshrc
 echo "$(tput setaf 1)========== FINISH =========="
 
 sleep 3
-sudo chsh -s $(which zsh)
+sudo shutdown -r 0
 echo " "
 echo " "
 echo "$(tput setaf 2)========== END!!! =========="
