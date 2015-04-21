@@ -64,3 +64,4 @@ rvm reload
 echo " "
 echo " "
 echo "$(tput setaf 2)========== END!!! =========="
+echo "exit"
