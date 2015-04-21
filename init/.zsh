@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DOT="$HOME/Projects/github/env"
 echo ""
