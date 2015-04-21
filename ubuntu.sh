@@ -14,6 +14,7 @@ if [ ! -f "/usr/bin/git" ]; then
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
 else
+  echo ""
   echo "$(tput setaf 6)AWESOME! GIT is INSTALLED! Now Updating Packages..."
   echo "$(tput setaf 5)"
   sleep 5
