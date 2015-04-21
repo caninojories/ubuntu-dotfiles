@@ -21,7 +21,7 @@ if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   echo " "
 fi
 
-#if [ ! -f "/usr/local/rvm/rubies/ruby-2.2.2/bin/ruby" ] ; then
+if [ ! -f "/usr/local/rvm/rubies/ruby-2.2.2/bin/ruby" ] ; then
   echo ""
   echo "$(tput setaf 6)INSTALLING Ruby 2.2.2"
   echo "$(tput setaf 5)"
@@ -44,7 +44,7 @@ fi
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
-#fi
+fi
 
 # Update OSX SSL Certs
 # ---------------------------------------------------------------------
