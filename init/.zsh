@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOT="$HOME/Projects/github/env"
-
+echo ""
 echo "$(tput setaf 6)INITIALIZING .bash_aliases"
 echo "$(tput setaf 5)"
 cp -Rfxv $DOT/shell/.bash_aliases $HOME/.bash_aliases
@@ -19,9 +19,11 @@ echo " "
 # Install zsh & oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "$(tput setaf 6)INSTALLING OH-MY-ZSH"
+  echo "$(tput setaf 5)"
   #need this for fresh install before installing ohmyz.sh
   sudo apt-get install zsh
   curl -L http://install.ohmyz.sh | sh
+  echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
 fi
@@ -38,7 +40,7 @@ echo " "
 #Use the zsh in our current shell
 echo "$(tput setaf 6)MAKE THE ZSH OUR DEFAULT SHELL"
 echo "$(tput setaf 5)"
-sudo chsh -s $(which zsh) $(whoami)
+sudo chsh -s /bin/zsh
 #load the zshrc
 . ~/.zshrc
 echo "$(tput setaf 1)========== FINISH =========="
