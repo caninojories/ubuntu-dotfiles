@@ -88,6 +88,7 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
 else
   echo "$(tput setaf 6)AWESOME! HOMEBREW is INSTALLED! Now Updating..."
   echo "$(tput setaf 5)"
+  . ~/.linuxbrewsrc
   sleep 5
   brew upgrade
   brew update
