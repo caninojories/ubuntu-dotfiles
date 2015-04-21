@@ -40,20 +40,6 @@ if [ ! -f "/usr/bin/curl" ]; then
   echo " "
 fi
 
-if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
-  echo "$(tput setaf 6)CURL RVM"
-  echo "$(tput setaf 5)"
-  sleep 5
-  #before curling just download this first
-  \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-  #get the stable version of rvm
-  \curl -sSL https://get.rvm.io | bash
-  sleep 3
-  echo " "
-  echo "$(tput setaf 1)========== FINISH =========="
-  echo " "
-fi
-
 echo "$(tput setaf 6)COPY .BASHRC .BASH_PROFILE .LINUXBREWSRC"
 echo "$(tput setaf 5)"
 sleep 5
@@ -113,5 +99,3 @@ sleep 3
 echo " "
 echo " "
 echo "$(tput setaf 2)========== END!!! =========="
-#exit to load rvm
-exit

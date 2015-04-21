@@ -80,7 +80,7 @@ export PATH="/usr/local/bin:$HOME/.rvm/gems/ruby-2.2.2@global/bin:$PATH"
 #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . ~/.rvm/scripts/rvm
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
 
 # Thanks for the awesome idea batasrki
 gemdir() {

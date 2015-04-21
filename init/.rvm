@@ -7,23 +7,22 @@
 
 # install openssl, libyaml dependancies is installed via .brew
 
-#if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
+
+if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   echo "$(tput setaf 6)CURL RVM"
   echo "$(tput setaf 5)"
   sleep 5
   #before curling just download this first
-  #\curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+  \curl -sSL https://rvm.io/mpapis.asc | gpg --import -
   #get the stable version of rvm
-  \curl -sSL https://get.rvm.io | bash -s stable
-  source ~/.rvm/scripts/rvm
-  sudo echo "export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting" >>  $HOME/.zshrc
+  \curl -sSL https://get.rvm.io | bash
   sleep 3
   echo " "
-  echo "$(tput setaf 1)========== FINISH =========="""
+  echo "$(tput setaf 1)========== FINISH =========="
   echo " "
-#fi
+fi
 
-#if [ ! -f "/usr/local/rvm/rubies/ruby-2.2.2/bin/ruby" ] ; then
+if [ ! -f "/usr/local/rvm/rubies/ruby-2.2.2/bin/ruby" ] ; then
   echo ""
   echo "$(tput setaf 6)INSTALLING Ruby 2.2.2"
   echo "$(tput setaf 5)"
@@ -46,7 +45,7 @@
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
-#fi
+fi
 
 # Update OSX SSL Certs
 # ---------------------------------------------------------------------
