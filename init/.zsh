@@ -23,7 +23,6 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   #need this for fresh install before installing ohmyz.sh
   sudo apt-get install zsh
   wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-  sudo chsh -s $(which zsh)
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
@@ -35,6 +34,7 @@ echo "$(tput setaf 6)START ASSIGN 'ZSH SHELL'"
 echo "$(tput setaf 5)"
 cp -Rfxv "$DOT/shell/jories.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
 cp -Rfxv "$DOT/shell/.zshrc" "$HOME/.zshrc"
+sudo chsh -s $(which zsh)
 echo " "
 echo "$(tput setaf 1)========== FINISH ========="
 echo " "
