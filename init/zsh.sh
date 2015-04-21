@@ -39,6 +39,8 @@ echo " "
 echo "$(tput setaf 6)MAKE THE ZSH OUR DEFAULT SHELL"
 echo "$(tput setaf 5)"
 sudo chsh -s $(which zsh) $(whoami)
+#load the zshrc
+. ~/.zshrc
 echo "$(tput setaf 1)========== FINISH =========="
 
 sleep 1

@@ -108,7 +108,7 @@ fi
 echo "$(tput setaf 6)UPDATE REMOVE AUTOCLEAN CLEAN PACKAGES"
 echo "$(tput setaf 5)"
 sleep 5
-#sudo apt-get update
+sudo apt-get update
 sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get clean

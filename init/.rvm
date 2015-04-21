@@ -11,13 +11,23 @@ echo "$(tput setaf 6)INSTALLING Ruby 2.2.0"
 echo "$(tput setaf 5)"
 sleep 5
 rvm install 2.2.0 --disable-binary
+echo " "
+echo "$(tput setaf 1)========== FINISH =========="
+echo " "
 
 sleep 1
 rvm reload
 
 echo ""
-echo "  >   Set 2.1.3 as the default version"
-rvm use 2.1.3 --default
+echo "  >   Set 2.2.0 as the default version"
+echo ""
+echo "$(tput setaf 6)SET 2.2.0 as the DEFAULT VERSION"
+echo "$(tput setaf 5)"
+sleep 5
+rvm use 2.2.0 --default
+echo " "
+echo "$(tput setaf 1)========== FINISH =========="
+echo " "
 
 
 # Update OSX SSL Certs
@@ -35,3 +45,6 @@ rvm reload
 #
 # sleep 1
 # rvm reload
+echo " "
+echo " "
+echo "$(tput setaf 2)========== END!!! =========="
