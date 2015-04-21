@@ -66,14 +66,6 @@ echo "$(tput setaf 1)========== FINISH =========="
 echo " "
 
 if [ ! -d "$HOME/.linuxbrew" ]; then
-  echo "$(tput setaf 6)INSTALL RUBY BEFORE DOWNLOADING HOMEBREW"
-  echo "$(tput setaf 5)"
-  sleep 5
-  sudo apt-get install ruby
-  echo " "
-  echo "$(tput setaf 1)========== FINISH =========="
-  echo " "
-
   echo "$(tput setaf 6)DOWNLOADING And INSTALLING HOMEBREW"
   echo "$(tput setaf 5)"
   sleep 5

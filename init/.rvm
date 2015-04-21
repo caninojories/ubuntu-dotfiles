@@ -6,7 +6,7 @@
 # https://twitter.com/mpapis/status/447926386314186752
 
 # install openssl, libyaml dependancies is installed via .brew
-if [ ! -f "/usr/local/rvm" ] ; then
+if [ ! -f "/usr/bin/ruby" ] ; then
   echo ""
   echo "$(tput setaf 6)INSTALLING Ruby 2.2.0"
   echo "$(tput setaf 5)"
