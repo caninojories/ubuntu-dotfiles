@@ -51,6 +51,7 @@ fi
 
 sleep 1
 rvm reload
+. ~/.bashrc
 
 # echo ""
 # echo "  >   Update OSX SSL Certificates"
@@ -64,4 +65,3 @@ rvm reload
 echo " "
 echo " "
 echo "$(tput setaf 2)========== END!!! =========="
-echo "exit"
