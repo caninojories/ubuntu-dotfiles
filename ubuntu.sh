@@ -28,7 +28,7 @@ else
   echo " "
 fi
 
-if [ ! -f "/usr/bin/curl" ]; then
+if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   #install curl before running condition
   echo "$(tput setaf 6)DOWNLOADING CURL"
   echo "$(tput setaf 5)"
