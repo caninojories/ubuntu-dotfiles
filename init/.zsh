@@ -43,7 +43,7 @@ echo "$(tput setaf 6)MAKE THE ZSH OUR DEFAULT SHELL"
 echo "$(tput setaf 5)"
 #sudo chsh -s /bin/zsh
 #load the zshrc
-. ~/.zshrc
+#. ~/.zshrc
 echo "$(tput setaf 1)========== FINISH =========="
 
 sleep 1
