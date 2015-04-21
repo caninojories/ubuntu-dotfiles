@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT="$HOME/GITENVREPO/env"
+DOT="$HOME/Projects/github/env"
 
 echo "$(tput setaf 6)INITIALIZING .bash_aliases"
 echo "$(tput setaf 5)"
