@@ -22,7 +22,8 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "$(tput setaf 5)"
   #need this for fresh install before installing ohmyz.sh
   sudo apt-get install zsh
-  curl -L http://install.ohmyz.sh | sh
+  wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+  sudo chsh -s $(which zsh) $(whoami)
   echo " "
   echo "$(tput setaf 1)========== FINISH =========="
   echo " "
