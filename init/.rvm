@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # as of [24.03.2014], installing ruby versions will give you
 # a `dyld : Library not loaded` error and the way to get through
