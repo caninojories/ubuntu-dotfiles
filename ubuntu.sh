@@ -54,7 +54,7 @@ if [ ! -f "/usr/local/rvm/bin/rvm" ]; then
   echo " "
 fi
 
-echo "$(tput setaf 6)COPY .BASHRC And .BASH_PROFILE"
+echo "$(tput setaf 6)COPY .BASHRC .BASH_PROFILE .LINUXBREWSRC"
 echo "$(tput setaf 5)"
 sleep 5
 cp -R $HOME/Projects/github/env/shell/.bashrc $HOME/.bashrc
