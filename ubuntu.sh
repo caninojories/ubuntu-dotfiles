@@ -66,11 +66,13 @@ echo "$(tput setaf 1)========== FINISH =========="
 echo " "
 
 if [ ! -d "$HOME/.linuxbrew" ]; then
+
   echo "$(tput setaf 6)DOWNLOADING And INSTALLING HOMEBREW"
   echo "$(tput setaf 5)"
   sleep 5
   sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
   git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
+  . init/.rvm
   . ~/.linuxbrewsrc
   sleep 3
   echo " "
@@ -88,6 +90,7 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
 else
   echo "$(tput setaf 6)AWESOME! HOMEBREW is INSTALLED! Now Updating..."
   echo "$(tput setaf 5)"
+  . init/.rvm
   . ~/.linuxbrewsrc
   sleep 5
   brew upgrade
