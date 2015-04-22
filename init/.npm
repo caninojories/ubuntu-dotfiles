@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # List Packages that will be installed
+apt-add-repository ppa:chris-lea/node.js
+apt-get update
+apt-get install nodejs
 nodeModules = (gulp)
 
 # Install Node Packages
