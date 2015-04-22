@@ -15,8 +15,7 @@ node_modules=(
   'bower'
 )
 
-#Unix[0]='Debian'
-
+echo ""
 echo "$(tput setaf 6)Install Node Packages"
 echo "GULP"
 echo "NODEMON"
