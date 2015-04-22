@@ -8,10 +8,25 @@ if [ ! -f "/usr/bin/nodejs" ]; then
   apt-get install nodejs
 fi
 
-node_modules=('gulp')
+node_modules=(
+  'gulp'
+  'nodemon'
+  'bower'
+)
 
 #Unix[0]='Debian'
 
-# Install Node Packages
-#echo ${Unix[1]}
+echo "$(tput setaf 6)Install Node Packages"
+echo "GULP"
+echo "NODEMON"
+echo "BOWER"
+echo "$(tput setaf 5)"
+sleep 5
 npm install -g  ${node_modules[@]}
+echo " "
+echo "$(tput setaf 1)========== FINISH =========="
+
+sleep 3
+echo " "
+echo " "
+echo "$(tput setaf 2)========== END!!! =========="
