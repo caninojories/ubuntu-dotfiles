@@ -6,6 +6,7 @@ if [ ! -f "/usr/bin/nodejs" ]; then
   apt-add-repository ppa:chris-lea/node.js
   apt-get update
   apt-get install nodejs
+  npm install npm -g
 fi
 
 node_modules=(

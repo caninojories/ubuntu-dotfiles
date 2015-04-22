@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+packages=(
+  'mongo'
+)
+
+echo "$(tput setaf 6)Install Brew Packages"
+echo "MONGO"
+echo "$(tput setaf 5)"
+sleep 5
+brew install ${packages[@]}
+echo " "
+echo "$(tput setaf 1)========== FINISH =========="
+
+#Make a directory for mongo data
+mkdir $HOME/.mongodb-data
+
+sleep 3
+echo " "
+echo " "
+echo "$(tput setaf 2)========== END!!! =========="

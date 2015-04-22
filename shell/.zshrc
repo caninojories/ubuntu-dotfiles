@@ -48,7 +48,7 @@ alias projects="$PROJECTS"
 #alias pywebstart="python -m SimpleHTTPServer"
 
 # MongoDB
-#alias mongostart="mongod --dbpath $HOME/.mongodb-data"
+alias mongostart="mongod --dbpath $HOME/.mongodb-data"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
