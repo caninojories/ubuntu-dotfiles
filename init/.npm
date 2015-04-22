@@ -5,7 +5,8 @@ apt-get install python-software-properties
 apt-add-repository ppa:chris-lea/node.js
 apt-get update
 apt-get install nodejs
-nodeModules = (gulp 'gulp')
+lw=('plugin1' 'plugin2' 'plugin3')
+
 #Unix[0]='Debian'
 
 # Install Node Packages
