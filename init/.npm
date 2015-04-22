@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 
 # List Packages that will be installed
-apt-get install python-software-properties
-apt-add-repository ppa:chris-lea/node.js
-apt-get update
-apt-get install nodejs
-lw=('plugin1' 'plugin2' 'plugin3')
+if [ ! -f "/usr/bin/nodejs"]; then
+  apt-get install python-software-properties
+  apt-add-repository ppa:chris-lea/node.js
+  apt-get update
+  apt-get install nodejs
+fi
+
+node_modules=('gulp')
 
 #Unix[0]='Debian'
 
 # Install Node Packages
 #echo ${Unix[1]}
-#npm install -g  ${nodeModules[@]}
+npm install -g  ${node_modules[@]}
