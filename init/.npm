@@ -10,9 +10,10 @@ if [ ! -f "/usr/bin/nodejs" ]; then
 fi
 
 node_modules=(
+  'bower'
   'gulp'
   'nodemon'
-  'bower'
+  'pm2'
 )
 
 echo ""
