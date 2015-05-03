@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+DOT="$HOME/Projects/github/digitalOcean-Ubuntu-Dev" /etc/nginx/conf.d/erpmoe3.conf
 sudo apt-get update
 sudo apt-get install nginx -y
 sudo apt-get autoremove
-sudo apt.get autoclean
+sudo apt-get autoclean
 sudo apt-get clean
+
+cp -Rv DOT/source/sample.conf /etc/nginx/conf.d/sample.conf

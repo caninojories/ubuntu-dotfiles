@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOT="$HOME/Projects/github/env"
+DOT="$HOME/Projects/github/digitalOcean-Ubuntu-Dev"
 echo ""
 echo "$(tput setaf 6)INITIALIZING .bash_aliases"
 echo "$(tput setaf 5)"
