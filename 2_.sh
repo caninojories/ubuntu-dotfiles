@@ -64,8 +64,8 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
 else
   echo "$(tput setaf 6)AWESOME! HOMEBREW is INSTALLED! Now Updating..."
   echo "$(tput setaf 5)"
-  sudo brew upgrade
-  sudo brew update
+  brew upgrade
+  brew update
 fi
 
 
