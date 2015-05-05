@@ -33,8 +33,7 @@ echo ""
 echo "$(tput setaf 6) ⇣ Jories zsh-theme"
 echo "$(tput setaf 5)"
 cp -Rfxv "$DOT/bin/Jories Base-16.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
-cp -Rfxv "$DOT/bin/.zshrc" "$HOME/.zshrc" && sudo chsh -s $(which zsh) && . $HOME/.zshrc
+cp -Rfxv "$DOT/bin/.zshrc" "$HOME/.zshrc"
 
 #make the zsh our default
-sleep 2
-sudo shutdown -r 0
+#sudo chsh -s $(which zsh)
