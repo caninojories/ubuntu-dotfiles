@@ -20,5 +20,6 @@ echo "$(tput setaf 6)Install Node Packages"
 echo "GULP"
 echo "NODEMON"
 echo "BOWER"
+echo "PM2"
 echo "$(tput setaf 5)"
 npm install -g  ${node_modules[@]}
