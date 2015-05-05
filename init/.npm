@@ -22,4 +22,4 @@ echo "GULP"
 echo "NODEMON"
 echo "BOWER"
 echo "$(tput setaf 5)"
-npm install -g  ${node_modules[@]}
+sudo npm install -g  ${node_modules[@]}
