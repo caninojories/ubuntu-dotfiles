@@ -13,5 +13,5 @@ fi
 echo ""
 echo "$(tput setaf 6) ⇣ Jories zsh-theme"
 echo "$(tput setaf 5)"
-cp -RfXv "$DOT/bin/Jories Base-16.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
-cp -RfXv "$DOT/bin/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
+cp -Rfxv "$DOT/bin/Jories Base-16.zsh-theme" "$HOME/.oh-my-zsh/themes/jories.zsh-theme"
+cp -Rfxv "$DOT/bin/.zshrc" "$HOME/.zshrc" && source $HOME/.zshrc
