@@ -30,16 +30,21 @@ install_formula () {
   mkdir $HOME/.mongodb-data
 
   echo ""
-  echo "  ☕ elasticsearch"
-  brew install elasticsearch
-
-  echo ""
   echo "  ☕ ssh-copy-id"
   brew install ssh-copy-id
 
   echo ""
   echo "  ☕ vim (overriding system vim)"
   brew install vim --override-system-vi
+
+  echo " ☕ Caskroom"
+  brew install caskroom/cask/brew-cask
+
+  brew cask install java
+
+  echo ""
+  echo "  ☕ elasticsearch"
+  brew install elasticsearch
 
   # Cleanup
   echo ""
