@@ -37,10 +37,7 @@ install_formula () {
   echo "  ☕ vim (overriding system vim)"
   brew install vim --override-system-vi
 
-  echo " ☕ Caskroom"
-  brew install caskroom/cask/brew-cask
-
-  brew cask install java
+  . init/._java
 
   echo ""
   echo "  ☕ elasticsearch"
