@@ -54,16 +54,6 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
   sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
   git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
   . ~/.linuxbrewsrc
-
-  # Install Homebrew Formulas
-while true; do
-  read -p "Would you like to install Homebrew formulas? [y/n] " answer
-  echo ""
-  case $answer in
-    [y]* ) install_formula; break;;
-    [n]* ) break;;
-    * ) echo "Please answer Y or N.";;
-  esac
 done
   # Run Brew doctor before anything else
   echo "$(tput setaf 6) ☕ ⚕"
@@ -76,6 +66,17 @@ else
   brew upgrade
   brew update
 fi
+
+
+  # Install Homebrew Formulas
+while true; do
+  read -p "Would you like to install Homebrew formulas? [y/n] " answer
+  echo ""
+  case $answer in
+    [y]* ) install_formula; break;;
+    [n]* ) break;;
+    * ) echo "Please answer Y or N.";;
+  esac
 
 echo "$(tput setaf 6)UPDATE REMOVE AUTOCLEAN CLEAN PACKAGES"
 echo "$(tput setaf 5)"
