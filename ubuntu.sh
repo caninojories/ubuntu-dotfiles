@@ -1,23 +1,5 @@
 #!/bin/bash
 
-# Install Git latest version
-if [ ! -f "/usr/bin/git" ]; then
-  echo ""
-  echo "$(tput setaf 6) ⇣ GIT"
-  echo "$(tput setaf 5)"
-  sudo add-apt-repository ppa:git-core/ppa
-  sudo apt-get update
-  sudo apt-get install git
-else
-  echo ""
-  echo "$(tput setaf 6)AWESOME! GIT is INSTALLED! Now Updating Packages..."
-  echo "$(tput setaf 5)"
-  sudo apt-get update
-  sudo apt-get autoremove
-  sudo apt-get autoclean
-  sudo apt-get clean
-fi
-
 if [ ! -f "/usr/bin/curl" ]; then
   #install curl before running condition
   echo "$(tput setaf 6) ⇣ CURL"
