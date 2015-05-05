@@ -26,8 +26,7 @@ install_formula () {
 
   echo ""
   echo "  ☕ mongodb"
-  brew install mongo
-  mkdir $HOME/.mongodb-data
+  . init/.mongo
 
   echo ""
   echo "  ☕ ssh-copy-id"

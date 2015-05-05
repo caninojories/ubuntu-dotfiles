@@ -1,19 +1,10 @@
 #!/usr/bin/env bash
 
 echo ""
-echo "$(tput setaf 6)INSTALL MONGODB"
+echo "$(tput setaf 6)Install MongoDB"
 echo "$(tput setaf 5)"
-sleep 5
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb.list
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 mkdir $HOME/.mongodb-data
-sleep 3
-echo " "
-echo "$(tput setaf 1)========== FINISH =========="
-
-sleep 3
-echo " "
-echo " "
-echo "$(tput setaf 2)========== END!!! =========="
