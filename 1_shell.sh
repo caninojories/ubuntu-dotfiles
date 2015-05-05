@@ -37,6 +37,6 @@ cp -Rfxv "$DOT/bin/.zshrc" "$HOME/.zshrc"
 
 #make the zsh our default
 sleep 2
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 sleep 3
 sudo shutdown -r 0
