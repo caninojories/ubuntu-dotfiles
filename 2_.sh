@@ -81,7 +81,7 @@ while true; do
 done
 
 #source npm
-. init/.npm
+. ./init/.npm
 
 echo "$(tput setaf 6)UPDATE REMOVE AUTOCLEAN CLEAN PACKAGES"
 echo "$(tput setaf 5)"
