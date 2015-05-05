@@ -9,7 +9,7 @@ fi
 
 echo "$(tput setaf 6) Copy .LINUXBREWSRC"
 echo "$(tput setaf 5)"
-cp -R $HOME/Projects/github/digitalOcen-Ubuntu-Dev/source/.linuxbrewsrc $HOME/.linuxbrewsrc
+cp -R $HOME/Projects/github/digitalOcean-Ubuntu-Dev/source/.linuxbrewsrc $HOME/.linuxbrewsrc
 
 # Function to install Homebrew Formulas:
 install_formula () {
