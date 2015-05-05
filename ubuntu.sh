@@ -37,7 +37,7 @@ install_formula () {
   echo "  ☕ vim (overriding system vim)"
   brew install vim --override-system-vi
 
-  . init/._java
+  . init/.java_jre
 
   echo ""
   echo "  ☕ elasticsearch"
