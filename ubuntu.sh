@@ -80,6 +80,9 @@ while true; do
   esac
 done
 
+#source npm
+. init/.npm
+
 echo "$(tput setaf 6)UPDATE REMOVE AUTOCLEAN CLEAN PACKAGES"
 echo "$(tput setaf 5)"
 sleep 5
