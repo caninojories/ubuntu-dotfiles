@@ -60,7 +60,6 @@ if [ ! -d "$HOME/.linuxbrew" ]; then
   echo "$(tput setaf 6) ☕ ⚕"
   echo "$(tput setaf 5)"
   sleep 5
-  sudo brew doctor
 else
   echo "$(tput setaf 6)AWESOME! HOMEBREW is INSTALLED! Now Updating..."
   echo "$(tput setaf 5)"

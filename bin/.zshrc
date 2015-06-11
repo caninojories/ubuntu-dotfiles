@@ -2,6 +2,8 @@
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+#instance of the mongodb
+export LC_ALL="C"
 export PATH="$HOME/.rvm/bin:$PATH:"
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
