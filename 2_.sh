@@ -21,10 +21,6 @@ install_formula () {
   brew install openssl
 
   echo ""
-  echo "  ☕ node"
-  brew install node
-
-  echo ""
   echo "  ☕ mongodb"
   . init/.mongo
 
@@ -41,6 +37,14 @@ install_formula () {
   echo ""
   echo "  ☕ elasticsearch"
   brew install elasticsearch
+
+  echo ""
+  echo " ☕ mysql"
+  brew install mysql
+
+  echo ""
+  echo " ☕ NVM"
+  brew install nvm
 
   # Cleanup
   echo ""
