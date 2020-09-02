@@ -17,9 +17,14 @@ $ cd ubuntu-dotfiles-master
 ## Running our dotfiles
 
 ```bash
+# zshrc
 $ sh dot.sh
 
+# homebrew and packages
 $ sh dev.sh
+
+# software applications
+$ ./applications
 ```
 
 ## Others

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Let's install first application that does'nt have a snap counterpart
+# chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sleep 3
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+applications=(
+  'vlc'
+  'firefox'
+)
+
+applicationsWithClassicConfinement=(
+  'vscode'
+  'atom'
+)
+
+for application in "${applications[@]}"
+do
+  echo "Installing $application"
+  sudo snap install --channel=stable $application
+done
+
+for application in "${applicationsWithClassicConfinement[@]}"
+do
+  echo "Installing $application"
+  sudo snap install --channel=stable --classic $application
+done
