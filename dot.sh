@@ -8,6 +8,8 @@ if [ ! -f "/usr/bin/git" ]; then
   echo "$(tput setaf 5)"
   sudo apt update
   sudo apt install git
+  # make the git branch stays in the same terminal
+  git config --global pager.branch false
 else
   echo ""
   echo "$(tput setaf 6)AWESOME! GIT is INSTALLED! Now Updating Packages..."
@@ -37,4 +39,4 @@ cp -Rfxv "$PWD/zshrc" "$HOME/.zshrc"
 sleep 2
 chsh -s $(which zsh)
 sleep 3
-#sudo shutdown -r 0
+sudo shutdown -r 0
