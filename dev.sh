@@ -27,6 +27,12 @@ install_formula () {
   echo ""
   echo " ☕ NVM"
   brew install nvm
+  #symlink to latest node in nvm
+  sudo rm -f /usr/bin/node
+  sudo rm -f /usr/bin/npm
+  sudo ln -s $(which node) /usr/bin/
+  sudo ln -s $(which npm) /usr/bin/
+
 
   # Cleanup
   echo ""
